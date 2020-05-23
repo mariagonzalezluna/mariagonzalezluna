@@ -3473,7 +3473,7 @@ h3 {
 .service_area .single_service .service_hover {
   text-align: center;
   padding: 104px 0 94px 0;
-  background: rgba(0, 0, 0, 0.3);
+  background:rgba(0, 0, 0, 0.6);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
