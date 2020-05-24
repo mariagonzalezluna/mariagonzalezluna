@@ -6911,4 +6911,6 @@ h6 {
   font-size: 12px;
 }
 
+.modal-backdrop {z-index: 999 !important;}
+
 /*# sourceMappingURL=style.css.map */
