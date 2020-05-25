@@ -6917,3 +6917,7 @@ h6 {
 
 
 .iconprogramas img {margin: 5px;}
+
+.fa-linkedin {display: none !important;}
+
+.footer .socail_links {display: none !important;}
