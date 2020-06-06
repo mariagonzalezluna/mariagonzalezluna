@@ -1,0 +1,168 @@
+/* *********************************************
+[Master Stylesheet]
+
+Template Name: Mona - Model Agency HTML5 Template
+Template Author: Colorlib
+Template Author URL: http://colorlib.com
+Version: 1.0.0
+Last Update: Dec 21, 2018
+
+*********************************************
+
+[Tables of CSS Content]
+
++ body
+  - 1.0 Reboot CSS
+  - 2.0 Spacing CSS
+  - 3.0 Preloader CSS
+  - 4.0 Heading CSS
+  - 5.0 Backtotop CSS
+  - 6.0 Buttons CSS
+  - 7.0 Header CSS
+  - 8.0 Hero CSS
+  - 9.0 Gallery CSS
+  - 10.0 Testimonial CSS
+  - 11.0 Model CSS
+  - 12.0 About CSS
+  - 13.0 Breadcrumb CSS
+  - 14.0 Blog CSS
+  - 15.0 Cta CSS
+  - 16.0 Team CSS
+  - 17.0 Widget CSS
+  - 18.0 Footer CSS
+  - 19.0 Contact CSS
+  ---------------------------------------------
+  [Color Codes]
+
+  $heading: #232323; [Heading Color]
+  $text: #666666; [Text Color]
+  $bg-gray: #f0f0f0; [Gray Background]
+  $primary: #2196f3; [Primary Color]
+  $white: #ffffff; [White Color]
+  $dark: #000000; [Dark Color]
+  $border: #ebebeb; [Border Color]
+  $hover: #2196f3; [Hover Color]
+  $secondary: #a6a6a6; [Secondary Color]
+
+  ---------------------------------------------
+  [Font Family: 'HK Grotesk']
+--------------------------------------------- */
+/* Import Fonts & All CSS */
+@import url(css/default-assets/hkgrotesk-fonts.css);
+@import url(css/bootstrap.min.css);
+@import url(css/animate.css);
+@import url(css/default-assets/classy-nav.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/magnific-popup.css);
+@import url(css/font-awesome.min.css);
+@import url(css/default-assets/slick.css);
+@import url(css/style.css);
+/* :: 1.0 Reboot CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "HK Grotesk";
+  font-weight: 400;
+  font-size: 14px; }
+
+
+/* :: 3.0 Preloader CSS */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: #7f26bf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: auto;
+  display: block;
+  width: 195px; }
+
+.cssload-loader {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin: 3em;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  background: #ffffff; }
+
+.cssload-loader,
+.cssload-loader:after,
+.cssload-loader:before {
+  animation: 1.15s infinite ease-in-out;
+  -o-animation: 1.15s infinite ease-in-out;
+  -ms-animation: 1.15s infinite ease-in-out;
+  -webkit-animation: 1.15s infinite ease-in-out;
+  -moz-animation: 1.15s infinite ease-in-out; }
+
+.cssload-loader:after,
+.cssload-loader:before {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.cssload-loader {
+  animation-name: cssload-loader;
+  -o-animation-name: cssload-loader;
+  -ms-animation-name: cssload-loader;
+  -webkit-animation-name: cssload-loader;
+  -moz-animation-name: cssload-loader; }
+
+@keyframes cssload-loader {
+  from {
+    transform: scale(0);
+    opacity: 1; }
+  to {
+    transform: scale(1);
+    opacity: 0; } }
+@-o-keyframes cssload-loader {
+  from {
+    -o-transform: scale(0);
+    opacity: 1; }
+  to {
+    -o-transform: scale(1);
+    opacity: 0; } }
+@-ms-keyframes cssload-loader {
+  from {
+    -ms-transform: scale(0);
+    opacity: 1; }
+  to {
+    -ms-transform: scale(1);
+    opacity: 0; } }
+@-webkit-keyframes cssload-loader {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 0; } }
+@-moz-keyframes cssload-loader {
+  from {
+    -moz-transform: scale(0);
+    opacity: 1; }
+  to {
+    -moz-transform: scale(1);
+    opacity: 0; } }
+    
+/*# sourceMappingURL=style.css.map */
