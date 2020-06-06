@@ -6952,13 +6952,13 @@ h6 {
   }
   }
 
+  
+  .slicknav_btn {right: 15px !important;}
 
-  .slicknav_nav a {color: #FFF;}
+  .slicknav_nav a {color: #FFF !important;}
 
   .slicknav_menu .slicknav_nav {
-    background: #333;
-    padding: 10px;
-    border-radius: 10px;
+    background: #333 !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
   }
-
-  .slicknav_btn {right: 15px !important;}
