@@ -6962,3 +6962,8 @@ h6 {
     padding: 10px !important;
     border-radius: 10px !important;
   }
+
+
+  .instagram-media-rendered {
+    min-width: none !important;
+  }
