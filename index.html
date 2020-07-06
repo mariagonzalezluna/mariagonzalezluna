@@ -264,13 +264,13 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <div class="section_title text-center mb-50">
-                    <h3>Proyectos Recientes</h3>
+                <div class="section_title text-center mb-50" style="margin-bottom: 0px;">
+                    <h3 style=" margin-bottom: 0px; padding-bottom: 0px;">Proyectos Recientes</h3>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-12" style="padding-bottom: 20px;">
                 <div id="instagram-feed1" class="instagram_feed"></div>
             </div>
             
@@ -458,12 +458,12 @@ Diseño y Desarrollo de página web by <a href="#" target="_blank">MariaGluna</a
                 'username': 'maria_gluna',
                 'container': document.getElementById("instagram-feed1"),
                 'display_profile': true,
-                'display_biography': true,
+                'display_biography': null,
                 'display_gallery': true,
-                'callback': null,
+                'callback': true,
                 'styling': true,
-                'items': 6,
-                'items_per_row': 3,
+                'items': 4,
+                'items_per_row': 2,
                 'margin': 1,
                 'lazy_load': true
             });
