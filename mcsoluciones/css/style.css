@@ -1600,6 +1600,6 @@ Contact Page
 	}
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .homecentermc {text-align: center;}
 }
