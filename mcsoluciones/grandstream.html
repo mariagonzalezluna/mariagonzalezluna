@@ -72,35 +72,34 @@
 					<div class="col-lg-8">
 						<div class="blog-post">
 							
-							<h2 id="ask1" class="blog-title" style="margin-top: 40px;">Manual de Configuración Linksys PAP2</h2>
+							<h2 id="ask1" class="blog-title" style="margin-top: 40px;">Manual de configuración grandstream</h2>
 							<p>
-								1. Identifiqué la dirección IP del ATA e ingresé a través de su navegador preferido. <br>
-								2. Una vez en la página del dispositivo realizar clic en «admin» <br>
-								<img style="width: 100%; margin: 15px auto;" src="img/manuales/linksys-pap2-01.jpg"><br>
-								3. Una vez en modo administrador, clic en «Line 1».
-								En este punto definimos el usuario, contraseña y proxy de conexión. <br>
-								<img style="width: 100%; margin: 15px auto;" src="img/manuales/linksys-pap2-02.jpg"><br>
-								<h3 style="text-decoration: underline;">Proxy and Registration</h3>
-								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Proxy | mcsolucionesonline.com</h4> <br>
-								<h3 style="text-decoration: underline;">Subscriber Information</h3>
-								<h4 style="border: 1px solid #adb5bd; padding: 5px;">User ID | Número de Cuenta / Usuario SIP <br> 
-									Password | Clave asociada a la cuenta SIP</h4> <br>
-								4. Definir el códec g729 en la sección «Audio Configuration». <br>
-								<img style="width: 100%; margin: 15px auto;" src="img/manuales/linksys-pap2-03.jpg"><br>
-								<h3 style="text-decoration: underline;">Audio Configuration</h3>
-								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Preferred Codec | G729 <br> 
-									Use Pref Codec Only | Yes</h4> <br>
-								5. Definición de plan de marcado (Dial plan). Para facilitar la marcación directa a celulares y fijos(aplica para Colombia únicamente), realizar clic en «(switch to advanced view)» <br>
-								<img style="width: 100%; margin: 15px auto;" src="img/manuales/linksys-pap2-04.jpg"><br>
-								6. Luego nuevamente clic en «Line 1» <br>
-								<img style="width: 100%; margin: 15px auto;" src="img/manuales/linksys-pap2-05.jpg"><br>
-								7. Ahora Tendremos acceso a algunas opciones avanzadas del dispositivo, en la parte inferior encontramos «Dialplan» <br>
-								<img style="width: 100%; margin: 15px auto;" src="img/manuales/linksys-pap2-06.jpg"><br>
-								<h3 style="text-decoration: underline;">Dialplan</h3>
-								<h4 style="border: 1px solid #adb5bd; padding: 5px;">
-									(<:00578>[2]xxxxxxS0|<07:0057>xxxxxxxxS0|<05:0057>xxxxxxxxS0|<09:0057>xxxxxxxxS0|<3:00573>xxxxxxxxxS0|<009:00>x.|<007:00>x.|<005:00>x.|20xxS0|600S0|xxx.)
-								</h4> <br>
-								Si desea habilitar la línea 2 hacer clic en «línea 2» y repetir los pasos .
+								1. Conectamos un cable del puerto WAN al router o Internet.<br>
+								2. Conectamos el otro puerto que dice LAN hacia al equipo.<br>
+								Cuando conectemos el Grandstream abrimos nuestro navegador, y en el browser colocamos la siguiente IP:
+								192.168.2.1 <br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-01.jpg"><br>
+								En el campo Password: ingresamos la palabra admin <br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-02.jpg"><br>
+								Ahora Ingresamos a la pestaña Basic Settings que se encuentra en la parte superior.<br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-03.jpg"><br>
+								Ahora nos desplazamos en la parte que dice Wan side HTTP/Telnet access: le damos la opción Yes<br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-04.jpg"><br>
+								Nos dirigimos ahora a la pestaña FXS PORT1 <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Primary SIP Server: | mcsolucionesonline.com</h4> <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Failover SIP Server: | mcsolucionesonline.com</h4> <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Outbound Proxy: | mcsolucionesonline.com</h4> <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">SIP User ID: | El número de nuestra cuenta SIP</h4> <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Authenticate ID: | El número de nuestra cuenta SIP</h4> <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Authenticate Password: | El Password de nuestra cuenta SIP</h4> <br>
+								<h4 style="border: 1px solid #adb5bd; padding: 5px;">Name: | El nombre de la persona quien tendrá el servicio.</h4> <br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-05.jpg"><br>
+								Nos dirigimos a la casilla que dice Dial Plan <br>
+								<h3>{<3=573>xxxxxxxxx |<09=57>[1-9]xxxxxxx|<=091>xxxxxxx|<009=>x.|20xx|600|.}</h3><br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-06.jpg"><br>
+								Preferred Vocoder: (in listed order) [G729] <br>
+								<img style="width: 100%; margin: 15px auto;" src="img/manuales/grandstream-07.jpg"><br>
+								ya cuando terminamos este proceso continuamos con el FXS PORT2 repetimos los mismos pasos, damos clic en el botón UPDATE y después REBOOT. <br>
 							</p>
 							
 							
