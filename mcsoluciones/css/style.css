@@ -1193,6 +1193,8 @@ Blog Page
 	margin-bottom: 68px;
 }
 
+.askmc {margin: 0px 0 10px !important;}
+
 .blog-date {
 	display: inline-block;
 	min-width: 137px;
@@ -1202,8 +1204,7 @@ Blog Page
 	font-weight: 700;
 	line-height: 1.1;
 	text-align: center;
-	border-radius: 40px;
-	text-transform: uppercase;
+	border-radius: 6px;
 	color: #fff;
 	background: #f43f00;
 }
